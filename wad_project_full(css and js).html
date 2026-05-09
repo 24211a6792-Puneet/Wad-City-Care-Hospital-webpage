@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital</title>
+    <style>
+        /* General Setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { background-color: #ffffff; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+
+        /* Header Section */
+        header { 
+            display: flex; 
+            align-items: center; 
+            padding: 15px 4%; 
+            background: #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .logo-box { flex: 0 0 100px; }
+        .logo-box img { width: 90px; height: auto; display: block; border-radius: 5px; }
+        
+        .title-box { flex-grow: 1; text-align: center; }
+        .title-box h1 { font-size: 55px; color: #1a1a1a; margin: 0; font-weight: 800; }
+        .title-box p { font-size: 22px; color: #27ae60; font-weight: bold; margin-top: -10px; }
+
+        /* Navigation Bar */
+        nav { 
+            background: #0056b3; 
+            padding: 15px; 
+            text-align: center; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a { color: #ffffff; text-decoration: none; font-weight: 600; margin: 0 25px; font-size: 16px; transition: 0.3s; }
+        nav a:hover { color: #f1c40f; }
+
+        /* Main Section Styling */
+        section { padding: 60px 4%; text-align: left; }
+        h2 { font-size: 32px; margin-bottom: 25px; color: #2c3e50; border-left: 5px solid #0056b3; padding-left: 15px; }
+
+        /* Home Image - Light Border & Responsive */
+        .home-image-container {
+            width: 100%;
+            max-width: 1100px;
+            border: 1px solid #eeeeee; /* Ultra light border */
+            border-radius: 12px;
+            margin: 20px 0;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+        .home-image-container img { 
+            width: 100%; 
+            height: auto; 
+            display: block;
+        }
+
+        /* Tables */
+        table { width: 100%; max-width: 850px; border-collapse: collapse; margin-top: 20px; background: #fff; }
+        th, td { border: 1px solid #f0f0f0; padding: 18px; text-align: left; }
+        th { background: #f8f9fa; color: #0056b3; font-weight: bold; }
+        tr:hover { background: #fafafa; }
+
+        /* Cards for Doctors and Contact */
+        .info-card { 
+            margin-bottom: 25px; 
+            padding: 25px; 
+            background: #fdfdfd;
+            border: 1px solid #f1f1f1;
+            border-radius: 10px;
+            width: fit-content;
+            min-width: 400px;
+            transition: 0.3s;
+        }
+        .info-card:hover { border-color: #0056b3; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        /* Modern Form */
+        form { max-width: 500px; padding: 30px; background: #fff; border: 1px solid #eee; border-radius: 15px; }
+        label { font-weight: 600; display: block; margin-bottom: 8px; font-size: 14px; color: #555; }
+        input, select { 
+            width: 100%; padding: 14px; margin-bottom: 25px; 
+            border: 1px solid #ddd; border-radius: 8px; font-size: 15px; outline: none;
+        }
+        input:focus { border-color: #0056b3; }
+        input[type="submit"] { 
+            background: #28a745; color: #fff; border: none; cursor: pointer; 
+            font-weight: bold; font-size: 18px; transition: 0.3s;
+        }
+        input[type="submit"]:hover { background: #218838; transform: translateY(-2px); }
+
+        /* Footer */
+        footer { padding: 50px 4%; background: #1a1a1a; color: #fff; text-align: left; }
+        footer b { color: #27ae60; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uNRXyHVgZoYljCfD8yL_wMoiIIAxQsx-Wg&s" alt="Hospital Logo">
+        </div>
+        <div class="title-box">
+            <h1>City Care Hospital</h1>
+            <p>Swasth Bharat</p>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>*Welcome to City Care Hospital*</h2>
+        <div class="home-image-container">
+            <img src="https://uat-icareheal.s3.ap-south-1.amazonaws.com/uatwebcontent/986/health-package/Care%20for%20You%2024%C3%977%20%E2%80%93%20Because%20Every%20Minute%20Matters%20(1).png" alt="Care for You banner">
+        </div>
+        <p style="font-size:24px; color: #777; font-style: italic;">- Healing with Heart because every patient Matters...</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Departments</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Block Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>General Medicine</td>
+                    <td>Block A</td>
+                </tr>
+                <tr>
+                    <td>Cardiology</td>
+                    <td>Block B</td>
+                </tr>
+                <tr>
+                    <td>Orthopedics (Injuries)</td>
+                    <td>Block C</td>
+                </tr>
+                <tr>
+                    <td>Emergency Services</td>
+                    <td>Block D</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors">
+        <h2>Our Expert Doctors</h2>
+        <div class="info-card">
+            <h3 style="color:#0056b3; margin-bottom: 10px;">Dr. Rajiv Dixit</h3>
+            <p><strong>Specialty:</strong> Cardiologist</p>
+            <p><strong>Experience:</strong> 12 Years</p>
+        </div>
+        <div class="info-card">
+            <h3 style="color:#0056b3; margin-bottom: 10px;">Dr. Riya Verma</h3>
+            <p><strong>Specialty:</strong> Orthopedics</p>
+            <p><strong>Experience:</strong> 6 Years</p>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment">
+        <h2>Book Your Appointment Now</h2>
+        <form id="hospitalForm">
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+            
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your mobile number" required>
+            
+            <label>Department:</label>
+            <select>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Orthopedics</option>
+                <option>Emergency Services</option>
+            </select>
+            
+            <label>Select Date:</label>
+            <input type="date" required>
+            
+            <input type="submit" value="Submit Appointment">
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="info-card">
+            <p><strong>Address:</strong> Himayat Nagar, Hyderabad, Telangana-India</p>
+            <p><strong>Phone:</strong> +91 8074814560</p>
+            <p><strong>Email:</strong> Swasthbharathcare@hospital.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><b>Thank you for your support - @CityCare Hospital.</b></p>
+    </footer>
+
+    <!-- Simple JavaScript -->
+    <script>
+        document.getElementById('hospitalForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Thank you! Your appointment request has been received.');
+        };
+    </script>
+
+</body>
+</html>
